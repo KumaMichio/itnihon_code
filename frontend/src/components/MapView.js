@@ -14,7 +14,7 @@ function MapView({ center, cafes, currentLocation, onSelectCafe }) {
     if (!mapContainerRef.current) return;
     if (mapRef.current) return;
 
-    const token = process.env.REACT_APP_GOONG_MAPTILES_KEY;
+    const token =process.env.REACT_APP_GOONG_MAPTILES_KEY;
     if (!token) {
       console.error('Missing REACT_APP_GOONG_MAPTILES_KEY');
       return;
